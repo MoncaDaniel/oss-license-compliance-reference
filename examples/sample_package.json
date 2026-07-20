@@ -1,0 +1,15 @@
+{
+  "name": "example-node-project",
+  "version": "1.0.0",
+  "description": "Example Node.js project spanning multiple license risk tiers.",
+  "dependencies": {
+    "express": "^4.18.0",
+    "lodash": "~4.17.21",
+    "gpl-sample-lib": "^1.0.0",
+    "agpl-sample-lib": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
