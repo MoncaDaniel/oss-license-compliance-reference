@@ -129,13 +129,19 @@ with c1:
             "Distributed": t("use_case_distributed"),
         }[k],
     )
-    target_markets = st.multiselect(t("target_markets_label"), options=["EU", "US", "UK", "Asia", "Other"], default=["EU"])
+    target_markets = st.multiselect(
+        t("target_markets_label"),
+        options=["EU", "US", "UK", "Asia", "Other"],
+        default=["EU"],
+        placeholder=t("multiselect_placeholder"),
+    )
 
 with c2:
     data_type_options = st.multiselect(
         t("data_types_label"),
         options=["industrial", "customer"],
         format_func=lambda k: {"industrial": t("data_type_industrial"), "customer": t("data_type_customer")}[k],
+        placeholder=t("multiselect_placeholder"),
     )
     is_safety_critical = st.checkbox(t("safety_critical_label"))
     has_ai = st.checkbox(t("has_ai_label"))
